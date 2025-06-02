@@ -86,10 +86,21 @@ V8: 13.2.152.41-electron.0
 OS: Linux x64 6.1.0-34-
 ```
 
-## Download via wget
+>[!NOTE]
+>Different curl vs wget [![alt text][1]](https://daniel.haxx.se/docs/curl-vs-wget.html)
+
+## Download via wget [![alt text][1]](https://askubuntu.com/questions/207265/how-to-download-a-file-from-a-website-via-terminal)
 
 ```bash
 mkdir -p img && wget  -P img/ "https://raw.githubusercontent.com/MathiasStadler/link_symbol_svg/360d1327d05280d53de5fa816c522f89a35891ca/img/link_symbol.svg"
+```
+
+## Download via cURL [![alt text][1]](https://stackoverflow.com/questions/32330737/ubuntu-using-curl-to-download-an-image)
+
+- Keep the original name — use uppercase -O
+  
+```bash
+curl -O  "https://raw.githubusercontent.com/MathiasStadler/link_symbol_svg/360d1327d05280d53de5fa816c522f89a35891ca/img/link_symbol.svg"
 ```
 
 I never plan never far ahead. Carpe diam
