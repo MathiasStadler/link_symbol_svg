@@ -86,5 +86,13 @@ V8: 13.2.152.41-electron.0
 OS: Linux x64 6.1.0-34-
 ```
 
+## Download via wget
+
+```bash
+mkdir -p img && wget  -P img/ "https://raw.githubusercontent.com/MathiasStadler/link_symbol_svg/360d1327d05280d53de5fa816c522f89a35891ca/img/link_symbol.svg"
+```
+
+I never plan never far ahead. Carpe diam
+
 <!-- Link sign - Don't Found a better way :-( - You know a better method? - send me a email -->
 [1]: ./img/link_symbol.svg

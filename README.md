@@ -1,6 +1,6 @@
 # link_symbol_svg
 
-My central github repo for the link symbol - please contact me if you a better idea for a central place of this
+My central github repo for the link symbol - please contact me if you have a better idea for a central place of this
 
 ## Used inside markdown file
 
