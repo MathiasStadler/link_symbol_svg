@@ -17,14 +17,15 @@ Wed May 21 09:17:17 AM CEST 2025
 
 ### Install How do install lshw  on debian and usw it [![alt text][1]](https://www.tecmint.com/commands-to-collect-system-and-hardware-information-in-linux/)
 <!--- THis empty line inside the block is necessary for correct format -->
-        ```bash<!-- markdownlint-disable-line code-block-style -->
-        sudo apt update
-        sudo apt install lshw
-        ```
-    <!--- THis empty line inside the block is necessary for correct format -->
-    ### used
-    <!--- THis empty line inside the block is necessary for correct format -->
-        ```bash<!-- markdownlint-disable-line code-block-style -->
+```bash<!-- markdownlint-disable-line code-block-style -->
+sudo apt update
+sudo apt install lshw
+```
+<!--- THis empty line inside the block is necessary for correct format -->
+### Used
+
+<!--- THis empty line inside the block is necessary for correct format -->
+```bash<!-- markdownlint-disable-line code-block-style -->
         sudo lshw -class cpu -class memory
         [sudo] password for trapapa:
         *-cpu
@@ -45,10 +46,10 @@ Wed May 21 09:17:17 AM CEST 2025
         slot: System board or motherboard
         size: 16GiB
         #truncated
-        >```
-    ><!--- THis empty line inside the block is necessary for correct format -->
-    &nbsp;
-    <!--- THis empty line is necessary for correct format -->
+```
+><!--- THis empty line inside the block is necessary for correct format -->
+&nbsp;
+<!--- THis empty line is necessary for correct format -->
 
 ### OS-Version
 
@@ -86,20 +87,37 @@ V8: 13.2.152.41-electron.0
 OS: Linux x64 6.1.0-34-
 ```
 
->[!NOTE]
+>[!NOTE]man page [![alt text][1]](https://linux.die.net/man/1/curl)
 >Different curl vs wget [![alt text][1]](https://daniel.haxx.se/docs/curl-vs-wget.html)
 
-## Download via wget [![alt text][1]](https://askubuntu.com/questions/207265/how-to-download-a-file-from-a-website-via-terminal)
+## Download via wget [![alt text][1]](https://askubuntu.com/questions/207265/how-to-download-a-file-from-a-website-via-terminal) man page [![alt text][1]](https://linux.die.net/man/1/wget)
+
+### Command option wget
+<!-- markdownlint-disable MD032 -->
+<!-- markdownlint-disable MD032 -->
+-P ``<dir>``  **UPPER LETTER**  
+--page-requisites
+    This option causes Wget to download all the files that are necessary to properly display a given HTML page. This includes such things as inlined images, sounds, and referenced stylesheets
+<!-- markdownlint-enable MD032 -->
 
 ```bash
 mkdir -p img && wget  -P img/ "https://raw.githubusercontent.com/MathiasStadler/link_symbol_svg/360d1327d05280d53de5fa816c522f89a35891ca/img/link_symbol.svg"
 ```
 
 ## Download via cURL [![alt text][1]](https://stackoverflow.com/questions/32330737/ubuntu-using-curl-to-download-an-image) man page [![alt text][1]](https://linux.die.net/man/1/curl)
-<!-- markdownlint-disable MD032 -->
-### Command option
+
+### Command option curl
+
+>[!TIP]
+><!-- markdownlint-disable MD033 -->
+>To create a markdown line break (```<<br>``` tag) with Markdown, place two spaces at the end of the line
+>
+<!-- markdownlint-enable MD033 -->
+
+<!-- markdownlint-disable MD033 -->
 <!-- -->
--O --remote-name **UPPER LETTER**
+-O **UPPER LETTER**  
+--remote-name  <!-- To create a line break (<br> tag) with Markdown, place two spaces at the end of the line-->
                 Write output to a local file named like the remote file we get.  
 <!-- -->
 --create-dirs
