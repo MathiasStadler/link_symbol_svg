@@ -15,7 +15,7 @@ Wed May 21 09:17:17 AM CEST 2025
 
 ## Hardware
 
-### Install How do install lshw  on debian and usw it [![alt text][1]](https://www.tecmint.com/commands-to-collect-system-and-hardware-information-in-linux/)
+### Install How do install lshw  on debian [![alt text][1]](https://www.tecmint.com/commands-to-collect-system-and-hardware-information-in-linux/)
 <!--- THis empty line inside the block is necessary for correct format -->
 ```bash<!-- markdownlint-disable-line code-block-style -->
 sudo apt update
@@ -51,7 +51,7 @@ sudo apt install lshw
 &nbsp;
 <!--- THis empty line is necessary for correct format -->
 
-### OS-Version
+### OS-Version - cat /etc/os-release
 
 ```bash
 cat /etc/os-release 
@@ -66,7 +66,7 @@ SUPPORT_URL="https://www.debian.org/support"
 BUG_REPORT_URL="https://bugs.debian.org/"
 ```
 
-## OS-Version - uname
+## OS-Version - uname -a
 
 ```bash <!-- markdownlint-disable-line code-block-style -->
 $ uname -a
@@ -93,11 +93,11 @@ OS: Linux x64 6.1.0-34-
 ## Download via wget [![alt text][1]](https://askubuntu.com/questions/207265/how-to-download-a-file-from-a-website-via-terminal) man page [![alt text][1]](https://linux.die.net/man/1/wget)
 
 ### Command option wget
-<!-- markdownlint-disable MD032 -->
+
 <!-- markdownlint-disable MD032 -->
 -P ``<dir>``  **UPPER LETTER**  
---page-requisites
-    This option causes Wget to download all the files that are necessary to properly display a given HTML page. This includes such things as inlined images, sounds, and referenced stylesheets
+--page-requisites  
+This option causes Wget to download all the files that are necessary to properly display a given HTML page. This includes such things as inlined images, sounds, and referenced stylesheets
 <!-- markdownlint-enable MD032 -->
 
 ```bash
