@@ -97,15 +97,21 @@ mkdir -p img && wget  -P img/ "https://raw.githubusercontent.com/MathiasStadler/
 
 ## Download via cURL [![alt text][1]](https://stackoverflow.com/questions/32330737/ubuntu-using-curl-to-download-an-image) man page [![alt text][1]](https://linux.die.net/man/1/curl)
 <!-- markdownlint-disable MD032 -->
->-O --remote-name **UPPER LETTER**
+### Command option
+<!-- -->
+-O --remote-name **UPPER LETTER**
                 Write output to a local file named like the remote file we get.  
->--create-dirs
+<!-- -->
+--create-dirs
                 When used in conjunction with the -o option, curl will create the necessary local directory hierarchy as needed.
-- - --output-dir ``<dir>``
+<!-- -->
+--output-dir ``<dir>``
               This option specifies the directory in  which  files  should  be
               stored, when -O, --remote-name or -o, --output are used
-> 
+
 <!-- markdownlint-enable MD032 -->
+### Fetch the symbol from repo via command curl
+
 ```bash
 curl --create-dirs --output-dir img -O  "https://raw.githubusercontent.com/MathiasStadler/link_symbol_svg/360d1327d05280d53de5fa816c522f89a35891ca/img/link_symbol.svg"
 ```
